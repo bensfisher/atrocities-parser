@@ -1,4 +1,9 @@
 atrocities-parser
 =================
 
-This pulls death numbers and dates by country from Amnesty International country reports. It works, but it's rough and VERY slow. I'm in the process of rewriting this using spaCy, which speeds up the parsing considerably.
+The file spacy\_parser.py contains the function 'atrocities\_parser', which extracts
+the date and number of deaths from sentences in Amnesty International reports that mention attacks on civilians.
+It takes as its input the filepath of the directory which contains the AI reports
+that you want to parse and returns a list with the information that you can then 
+convert to a pandas dataframe (my attempts to do this within the function were met
+with many angry ascii unicode errors).
